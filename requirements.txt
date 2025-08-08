@@ -1,8 +1,9 @@
-flask
-langchain
-gemini
-faiss-cpu
-python-dotenv
-pypdf
-requests
-gunicorn
+flask==3.0.3
+langchain==0.2.14
+google-generativeai==0.7.2
+faiss-cpu==1.8.0.post1
+python-dotenv==1.0.1
+pypdf==4.2.0
+requests==2.32.3
+gunicorn==22.0.0
+ipython-cluster-helper==0.0  # block broken package
