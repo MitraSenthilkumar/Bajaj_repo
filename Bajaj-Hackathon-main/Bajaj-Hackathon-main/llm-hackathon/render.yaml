@@ -3,6 +3,8 @@ services:
     name: bajaj-hackathon
     env: python
     plan: free
-    rootDir: llm-hackathon
-    buildCommand: ""
-    startCommand: gunicorn main:app
+    buildCommand: pip install -r Bajaj-Hackathon-main/llm-hackathon/requirements.txt
+    startCommand: cd Bajaj-Hackathon-main/llm-hackathon && uvicorn main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
